@@ -1,64 +1,78 @@
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: black;
 }
 
 /* Navigation Bar */
 
 #home {
-  background-color:  #48314f;
-  padding-bottom: 1cm;
-  margin-left:-1cm;
-  margin-right:-1cm;
-  margin-top:-1cm;
-  padding-top: 2cm;
-  padding-bottom: 2cm;
-  height: 5mm;
- }
-
-.topmenu {
-  color: #f8b6b5;
-  margin: 10px;
+  background-color:  black;
   padding: 20px;
-  font-size: 20px;
-  text-decoration:none;
+  margin: 0;
+  border: 2px solid #67ff6b;
+  box-shadow: 0px 8px 16px 0px #67ff6b;
+  display: grid;
+  grid-template-columns: 1fr 2fr ;
 }
 
-.profile_image{
-    margin-top: 5cm;
-    padding-top: 55px;
-}
-
-.topmenu:hover{
-  color: whitesmoke;
-  font-weight: bolder;
-  text-decoration: underline;
-  /* Add the styles here */
-}
-
-.topdiv {
-  float: right;
-  padding-right: 1cm;
+.profile_info {
+display: grid;
+grid-template-columns: 100%;
+grid-auto-rows: 20px;
 }
 
 .profile_name {
   float: left;
-  padding-left: 2cm;
+  padding: 0;
   color: #ef839b;
-  font-size: 30px;
+  font-size: 35px;
+  font-family: monospace;
 }
-
+.contact_info img {
+  width:25px;
+  margin-right: 10px;
+  float:left;
+}
 .profile_name .contact_info {
-  font-size: 15px;
+  font-size: 50%;
   font-style: italic;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
 
-.contact_info img {
-  width:25px;
-  margin-right: 10px;
-  float:left;
+
+
+.topdiv {
+  float: right;
+  padding-right: 1cm;
+}
+#ul_list_navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.li_navbar {
+  float: right;
+}
+.topmenu {
+  display: block;
+  color: #f8b6b5;
+  padding: 14px 16px;
+  text-decoration:none;
+  text-align: center;
+  font-size: 20px;
+}
+.topmenu:hover{
+  color: whitesmoke;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.profile_image{
+    margin-top: 5cm;
+    padding-top: 55px;
 }
 
 /* Titles */
@@ -86,7 +100,6 @@ h2 {
   position: relative;
 }
 
-/* Used in the About Me sections */
 
 .container {
   display: flex;
@@ -127,16 +140,58 @@ h2 {
 }
 
 .skill {
-  border: 1px solid gray;
-  display: block;
+  border: 1px solid white;
+
+  display: inline-block;
+  position: relative;
+
   border-radius: 6px;
   text-align: center;
   margin: 50px;
   padding: 10px;
-  width: 2in;
+  width: 190px;
   font-size: 20px;
   box-shadow: 0 3px 10px gray;
+  color: beige;
+  background-color: black;
 }
+
+.into_skills {
+  position: absolute;
+  color: #67ff6b;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  border-radius: 6px;
+}
+
+.into_skills a {
+  display: grid;
+  color: #67ff6b;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: fr;
+}
+
+.text_skill {
+  white-space: nowrap; 
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.skill:hover .into_skills {
+  width: 100%;
+}
+
 
 .skill img {
   height: 35px;
@@ -149,6 +204,7 @@ h2 {
   margin-block-start: 8px;
   margin-block-end: 5px;
   font-weight: bold;
+  color: beige;
 } 
 
 .skills p {
@@ -157,6 +213,7 @@ h2 {
   color: gray;
   margin-block-start: 5px;
   margin-block-end: 5px;
+  color: beige;
 } 
 
 .flex_center {
@@ -191,6 +248,7 @@ h2 {
 .project-card li {
   font-size: 20px;
   margin-left: 30px;
+  color: beige;
 }
 
 /* Recommendations */
@@ -291,6 +349,7 @@ input, textarea {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
   margin: 10px;  
   width:100%;
+  background-color: #3e2246;
 }
 
 fieldset {
@@ -303,7 +362,6 @@ fieldset {
   border: thin solid white;
   width: 50%;
 }
-
 /* Buttons */
 
 button {
