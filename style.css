@@ -59,6 +59,7 @@ grid-auto-rows: 20px;
 }
 .li_navbar {
   float: right;
+  margin-right: 5px;
 }
 .topmenu {
   display: block;
@@ -72,7 +73,8 @@ grid-auto-rows: 20px;
   color: #67ff6b;
   font-weight: bolder;
   text-decoration: underline;
-
+  box-shadow: 0px 0px 6px 3px #67ff6b;
+  text-shadow: 0px 0px 3px #ff3718;
 }
 
 .profile_image{
@@ -87,8 +89,8 @@ h2 {
   font-size: 50px;
   text-align: center;
   float: left;
-  color: black;
-  text-shadow: 1px 2px 6px white;
+  color: #170416;
+  text-shadow: 0px 2px 6px white;
   margin: 30px;
   margin-left: 60px;
   margin-top: 40px;
@@ -121,6 +123,7 @@ h2 {
 #about-me h1 {
   font-size: 65px;
   margin-top: 90px;
+  text-align: center;
   color: #812c86;
   text-shadow: 1px 1px 5px #ff3718;
 }
@@ -172,6 +175,7 @@ h2 {
   left: 0;
   right: 0;
   background-color: black;
+  box-shadow: 0px 3px 10px #67ff6b;
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -215,7 +219,7 @@ h2 {
 
 #java_image {
   width: 55px;
-  height: 60px;
+  height: 70px;
 }
 #node_image {
   width: 75px;
@@ -227,29 +231,30 @@ h2 {
   height: 70px;
 }
 
-.skills h6 {
+.skill h6 {
   align-items: center;
-  font-size: 20px;
+  font-size: 25px;
   margin-block-start: 8px;
   margin-block-end: 5px;
   font-weight: bold;
-  color: beige;
+  color: red;
+  text-shadow: 0px 0px 4px #ff3718;
 } 
 
-.skills p {
+.skill p {
   align-items: center;
-  font-size: 15px;
-  color: gray;
+  font-size: 20px;
+  color: rgb(27, 111, 195);
   margin-block-start: 5px;
   margin-block-end: 5px;
-  color: beige;
-} 
+  text-shadow: 1px 1px 8px rgba(27, 111, 195, .5);
+}
 
 .flex_center {
   display: flex;
-  align-items: center;
   justify-content: center;
-}
+} 
+
 
 /* Projects */
 
@@ -373,6 +378,10 @@ h2 {
 }
 
 /* Recommendation Form */
+
+.introduction{
+  color: white;
+}
 
 input, textarea {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
